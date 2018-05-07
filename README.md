@@ -55,12 +55,12 @@ Where are my Static Resources used?
 | Lightning Component | Yes |
 | VisualForce Page | Yes |
 
-Where are my VisualForce Pages used?
+Where are my Visualforce Pages used?
 --------------------------------
 
 ```sfdx force:data:soql:query --usetoolingapi --query "SELECT MetadataComponentId, MetadataComponentName, MetadataComponentType, RefMetadataComponentId, RefMetadataComponentName, RefMetadataComponentType FROM MetadataComponentDependency Where RefMetadataComponentType = 'StaticResource'"```
 
-| | VisualForce Page |
+| | Visualforce Page |
 | ------ | -----------| 
 | ApexClass (via PageReference) | Yes |
 | Custom Object | Yes |
@@ -78,7 +78,7 @@ Where are my Custom Setting Fields used?
 | | Custom Setting Field |
 | ------- | --------- | 
 | Apex (via getInstance) | Yes |
-| VisualForce Page (via $Setup) | Yes |
+| Visualforce Page (via $Setup) | Yes |
 | Formula Field (via $Setup) | Yes |
 | Validation Rule (via $Setup) | Yes |
 | Layout | Yes |
