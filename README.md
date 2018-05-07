@@ -1,4 +1,4 @@
-# dependencies-sampler
+# dependencies-sample
 A sample collection of seemingly random metadata and below the type relationships as currently returned by the [Dependencies API (Pilot)]().
 
 ![coverage](https://github.com/afawcett/dependencies-sample/raw/master/coverage.png)
