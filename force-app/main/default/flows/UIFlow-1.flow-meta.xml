@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <interviewLabel>UIFlow {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>UIFlow</label>
+    <processType>Flow</processType>
+    <screens>
+        <name>XX</name>
+        <label>X</label>
+        <locationX>111</locationX>
+        <locationY>127</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <startElementReference>XX</startElementReference>
+</Flow>

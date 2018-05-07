@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Check2</fullName>
+    <active>true</active>
+    <description>Check2</description>
+    <errorConditionFormula>ObjectA__r.CheckBox__c</errorConditionFormula>
+    <errorMessage>Test</errorMessage>
+</ValidationRule>

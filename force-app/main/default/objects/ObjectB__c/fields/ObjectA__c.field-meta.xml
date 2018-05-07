@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ObjectA__c</fullName>
+    <externalId>false</externalId>
+    <label>ObjectA</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>$Source.Include__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>ObjectA__c</referenceTo>
+    <relationshipLabel>ObjectB</relationshipLabel>
+    <relationshipName>ObjectB1</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

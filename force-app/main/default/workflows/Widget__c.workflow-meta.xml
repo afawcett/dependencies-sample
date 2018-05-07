@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>Test</fullName>
+        <field>SomeFieldOnWidget2__c</field>
+        <name>Test</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Null</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <tasks>
+        <fullName>A</fullName>
+        <assignedTo>test-hzez05ggjjgb@example.com</assignedTo>
+        <assignedToType>user</assignedToType>
+        <description>Test</description>
+        <dueDateOffset>0</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>In Progress</status>
+        <subject>A</subject>
+    </tasks>
+</Workflow>

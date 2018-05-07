@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <interviewLabel>CallMyAutoFlow {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>CallMyAutoFlow</label>
+    <processType>AutoLaunchedFlow</processType>
+    <startElementReference>X</startElementReference>
+    <subflows>
+        <name>X</name>
+        <label>X</label>
+        <locationX>139</locationX>
+        <locationY>285</locationY>
+        <flowName>MyAutoFlow</flowName>
+    </subflows>
+</Flow>

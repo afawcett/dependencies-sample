@@ -1,0 +1,6 @@
+<aura:component access="global" controller="MyController" implements="flexipage:availableForAllPageTypes,force:lightningQuickAction, force:hasRecordId, lightning:availableForFlowScreens">
+        <img src="{!$Resource.MyResource}"/>
+        <aura:attribute name="fred" type="Widget__c"/>
+        {!v.fred.SomeFieldOnWidget2__c}        
+        {!$Label.c.Test}
+</aura:component>	

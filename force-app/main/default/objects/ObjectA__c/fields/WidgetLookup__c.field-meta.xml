@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>WidgetLookup__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <label>WidgetLookup</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>Widget__c.SomeFieldOnWidget2__c</field>
+            <operation>equals</operation>
+            <value>Fred</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Widget__c</referenceTo>
+    <relationshipLabel>ObjectA</relationshipLabel>
+    <relationshipName>ObjectA</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ActionLinkGroupTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionLinkTemplates>
+        <actionUrl>https://asasa.com</actionUrl>
+        <isConfirmationRequired>false</isConfirmationRequired>
+        <isGroupDefault>false</isGroupDefault>
+        <label>Test</label>
+        <labelKey>None</labelKey>
+        <linkType>API</linkType>
+        <method>HttpPost</method>
+        <position>0</position>
+        <userVisibility>Creator</userVisibility>
+    </actionLinkTemplates>
+    <category>Primary</category>
+    <executionsAllowed>Once</executionsAllowed>
+    <isPublished>false</isPublished>
+    <name>Test2</name>
+</ActionLinkGroupTemplate>

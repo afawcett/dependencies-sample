@@ -1,0 +1,48 @@
+export NODE_TLS_REJECT_UNAUTHORIZED=0
+export SFDX_AUDIENCE_URL=https://test.stmfa.stm.salesforce.com
+export SFDX_API_VERSION=43.0
+sfdx force:auth:web:login -d -a DevHub
+User/pass admin@devhub-na45.org / 123456
+
+sfdx force:org:create -f config/project-scratch-def.json --setalias happysoup --setdefaultusername
+
+sfdx force:config:set defaultdevhubusername=admin@devhub-na45.org
+
+sfdx force:source:push
+
+Tried these along the way....
+
+sfdx force:auth:web:login --clientid 3MVG9qKMKuRGRcbvi3wd7YnigQW5I__xtouBMnsVE9L2RUUny4W.B6xPnlEbZ02SNp0XB7kb7rSYyS34AWp -r https://na44.stmfa.stm.salesforce.com
+
+sfdx force:auth:web:login --clientid 3MVG9qKMKuRGRcbvi3wd7YnigQW5I__xtouBMnsnWVE9L2RUUny4W.B6xPnlEbZ02SNp0XB7kb7rSYyS34AWp  -r https://na44.stmfa.stm.salesforce.com
+
+sfdx force:org:create -f config/project-scratch-def.json --setalias happysoup --setdefaultusername
+
+sfdx force:source:push
+
+sfdx force:data:soql:query --usetoolingapi --query "SELECT MetadataComponentName, MetadataComponentType FROM MetadataComponentDependency WHERE RefMetadataComponentType = 'ApexClass' And RefMetadataComponentName = 'MyController'" -u happysoup
+
+sfdx force:data:soql:query --usetoolingapi --query "SELECT MetadataComponentName, MetadataComponentType FROM MetadataComponentDependency WHERE RefMetadataComponentType = 'AuraDefinitionBundle' And MetadataComponentType = 'AuraDefinitionBundle'"
+
+sfdx force:data:soql:query --usetoolingapi --query "SELECT MetadataComponentId, MetadataComponentName, MetadataComponentType, RefMetadataComponentId, RefMetadataComponentName, RefMetadataComponentType FROM MetadataComponentDependency WHERE RefMetadataComponentType = 'AuraDefinitionBundle'" -u happysoup
+
+sfdx force:data:soql:query --usetoolingapi --query "SELECT MetadataComponentId, MetadataComponentName, MetadataComponentType, RefMetadataComponentId, RefMetadataComponentName, RefMetadataComponentType FROM MetadataComponentDependency"
+
+sfdx force:data:soql:query --usetoolingapi --query "SELECT Id, AuraDefinitionBundleId, DefType, Format, ManageableState FROM AuraDefinition" -u happysoup
+
+sfdx force:data:soql:query --usetoolingapi --query "SELECT Id, ApiVersion, Description, DeveloperName, Language, ManageableState, MasterLabel FROM AuraDefinitionBundle" -u happysoup
+
+sfdx force:data:soql:query --usetoolingapi --query "SELECT MetadataComponentName, MetadataComponentType, RefMetadataComponentName, RefMetadataComponentType FROM MetadataComponentDependency WHERE RefMetadataComponentName = 'ThumbNail' AND RefMetadataComponentType = 'CustomField' AND (NOT MetadataComponentName LIKE '%Test')"  -u dreamhouse
+
+{
+  "sfdcLoginUrl" : "https://login.stmfa.stm.salesforce.com",
+  "signupTargetLoginUrl" : "https://test.stmfa.stm.salesforce.com",
+  "packageDirectories": [
+    {
+      "path": "force-app",
+      "default": true
+    }
+  ],
+  "namespace": "",
+  "sourceApiVersion": "43.0"
+}

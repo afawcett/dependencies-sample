@@ -1,0 +1,9 @@
+<apex:page standardController="Account">
+  {!$Resource.MyResource}
+  <!-- Begin Default Content REMOVE THIS -->
+  <h1>Congratulations</h1>
+  This is your new Page
+  <!-- End Default Content REMOVE THIS -->  
+  {!$Label.Test}
+  {!$Setup.MySetting__c.On__c}
+</apex:page>

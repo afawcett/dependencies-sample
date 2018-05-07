@@ -1,0 +1,8 @@
+<apex:page controller="MyController">
+<!-- Begin Default Content REMOVE THIS -->
+<h1>Congratulations</h1>
+This is your new Page
+<!-- End Default Content REMOVE THIS -->
+<apex:repeat value="{!$ObjectType.Widget__c.FieldSets.MyFieldSet}" var="f"> 
+</apex:repeat>
+</apex:page>
