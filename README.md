@@ -53,7 +53,7 @@ Where are my Static Resources used?
 | | Static Resource |
 | ------- | ------- |
 | Lightning Component | Yes |
-| VisualForce Page | Yes |
+| Visualforce Page | Yes |
 
 Where are my Visualforce Pages used?
 --------------------------------
