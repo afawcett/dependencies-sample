@@ -1,5 +1,5 @@
 # dependencies-sampler
-A sample collection of seamingly random metadata and below the type relationships as returned currnently by the [Dependencies API (Pilot)]().
+A sample collection of seamingly random metadata and below the type relationships as returned currently by the [Dependencies API (Pilot)]().
 
 Where are my Custom Labels used?
 --------------------------------
