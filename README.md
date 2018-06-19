@@ -58,7 +58,7 @@ Where are my Static Resources used?
 Where are my Visualforce Pages used?
 --------------------------------
 
-```sfdx force:data:soql:query --usetoolingapi --query "SELECT MetadataComponentId, MetadataComponentName, MetadataComponentType, RefMetadataComponentId, RefMetadataComponentName, RefMetadataComponentType FROM MetadataComponentDependency Where RefMetadataComponentType = 'StaticResource'"```
+```sfdx force:data:soql:query --usetoolingapi --query "SELECT MetadataComponentId, MetadataComponentName, MetadataComponentType, RefMetadataComponentId, RefMetadataComponentName, RefMetadataComponentType FROM MetadataComponentDependency Where RefMetadataComponentType = 'Page'"```
 
 | | Visualforce Page |
 | ------ | -----------| 
@@ -168,3 +168,11 @@ Where are my Field Sets used?
 | Apex Page | Yes |
 | Apex Class | No |
 
+Where are my Orchestration Contexts used?
+--------------------------------
+
+```sfdx force:data:soql:query --usetoolingapi --query "SELECT MetadataComponentId, MetadataComponentName, MetadataComponentType, RefMetadataComponentId, RefMetadataComponentName, RefMetadataComponentType FROM MetadataComponentDependency Where RefMetadataComponentType = 'OrchestrationContext'"```
+
+| | Orchestration Context | 
+| -------- | ------- |
+| Custom Object | Yes |
