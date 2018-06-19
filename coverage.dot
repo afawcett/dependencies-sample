@@ -52,4 +52,5 @@ digraph graphname {
   action->customobject
   lightningcomponent->customobject
   apexpage->fieldset
+  orchestrationcontext->customobject
 }

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OrchestrationContext xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <events>
+        <eventType>PlatformEvent</eventType>
+        <orchestrationEvent xsi:nil="true"/>
+        <platformEvent>Flying_Fridge_Event__e</platformEvent>
+        <platformEventPrimaryKey>serial_no__c</platformEventPrimaryKey>
+    </events>
+    <masterLabel>Flying Fridge Context</masterLabel>
+    <runtimeType>Standard</runtimeType>
+    <salesforceObject>Asset</salesforceObject>
+    <salesforceObjectPrimaryKey>Fridge_Serial_Number__c</salesforceObjectPrimaryKey>
+</OrchestrationContext>
